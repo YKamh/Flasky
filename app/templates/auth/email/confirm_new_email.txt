@@ -1,0 +1,7 @@
+Dear {{ user.username }},</h1>
+To confirm your new email address <a href="{{ url_for('auth.update_new_email', token = token, _external=True) }}">Click me to finish confirm!</a>,
+Alternatively, you can paste the following link in your browser's address bar:
+{{ url_for('auth.update_new_email', token = token, _external=True) }}
+Sincerely,
+The Flasky Team
+Note: replies to this email address are not monitored.

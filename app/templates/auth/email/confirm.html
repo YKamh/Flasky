@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask - confirm</title>
+</head>
+<body>
+<h1>Dear {{ user.username }},</h1>
+Welcome to Flasky!
+To confirm your account please click on the following link:
+<a href="{{ url_for('auth.confirm', token = token, _external=True) }}">Click me to finish confirm!</a>
+Sincerely,
+The Flasky Team
+Note: replies to this email address are not monitord.
+</body>
+</html>

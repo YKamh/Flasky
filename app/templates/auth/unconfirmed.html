@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Flasky - Register{% endblock %}
+
+{% block page_content %}
+<h1>Hello, {{ current_user.username }}!</h1>
+<p>You have not confirmed your account yet!</p>
+<p>Before you can access this site you need to confirm your account.Check your inbox, you should have received an</p>
+<p>email with a confirmantion link.</p>
+Need another confirmation email?
+<a href="{{ url_for('auth.resend_confirmation', token = token, _external=True) }}">Click here!</a>
+{% endblock %}

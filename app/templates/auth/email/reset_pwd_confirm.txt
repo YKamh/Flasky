@@ -1,0 +1,8 @@
+Dear {{ user.username }},
+To reset your password<a href="{{ url_for('auth.change_confirm', token = token, _external=True) }}">Click me to finish confirm!
+Alternatively, you can paste the following link in your browser's address bar:
+{{ url_for('auth.change_confirm', token = token, _external=True) }}
+If you have not requested a password reset simply ignore this message.
+Sincerely,</p>
+The Flasky Team</p>
+Note: replies to this email address are not monitored.
