@@ -16,7 +16,8 @@ class Config:
     FLASKY_MAIL_SENDER = '1084168343@qq.com'
     FLASKY_ADMIN = '1084168343@qq.com'
     FLASKY_POSTS_PER_PAGE = 10
-    FLASK_FOLLOWERS_PER_PAGE = 10
+    FLASKY_FOLLOWERS_PER_PAGE = 10
+    FLASKY_COMMENTS_PER_PAGE = 10
 
     @staticmethod
     def init_app(app):
